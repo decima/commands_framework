@@ -1,0 +1,35 @@
+{
+    "name": "ag/php-commands",
+    "description": "Commands",
+    "type": "Project",
+    "autoload": {
+        "psr-4": {
+            "": "./"
+        }
+    },
+    "require": {
+        "symfony/console": "^3.2",
+        "composer/composer": "^1.4"
+    },
+    "license": "AG",
+    "authors": [
+        {
+            "name": "Henri",
+            "email": "h.larget@gmail.com"
+        }
+    ],
+    "scripts": {
+        "cmds": [
+            "Core\\Scripts\\ParametersHandler::parseConfig"
+            ],
+        "post-install-cmd":[
+            "@cmds"
+        ],
+        "post-update-cmd":[
+            "@cmds"
+        ]
+    },
+    "extra":{
+        "config-file":"config/parameters.ini"
+    }
+}
