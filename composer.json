@@ -1,5 +1,5 @@
 {
-    "name": "ag/php-commands",
+    "name": "decima/php-commands",
     "description": "Commands",
     "type": "Project",
     "autoload": {
@@ -14,8 +14,7 @@
     "license": "AG",
     "authors": [
         {
-            "name": "Henri",
-            "email": "h.larget@gmail.com"
+            "name": "Decima"
         }
     ],
     "scripts": {
